@@ -119,7 +119,7 @@ dynamicConfigs:
 
   linux-root-arm64:
     max-instances: "500"
-    sudo-commands: "/usr/bin/podman, /usr/bin/rm /usr/share/containers/mounts.conf"
+    sudo-commands: "/usr/bin/podman, /usr/bin/buildah, /usr/bin/rm /usr/share/containers/mounts.conf"
     disk: "200"
     iops: "16000"
     throughput: "1000"
@@ -127,7 +127,7 @@ dynamicConfigs:
   linux-root-amd64:
     max-instances: "500"
     instance-type: "m6idn.2xlarge"
-    sudo-commands: "/usr/bin/podman, /usr/bin/rm /usr/share/containers/mounts.conf"
+    sudo-commands: "/usr/bin/podman, /usr/bin/buildah, /usr/bin/rm /usr/share/containers/mounts.conf"
     disk: "200"
     # user-data loaded from base/host-config-chart/files/linux-root-amd64-init.sh
 
